@@ -22,7 +22,10 @@
 }
 
 .heart__icon::after {
-  background-color: var(--color-red);
+  content: '12';
+}
+.cart__icon::after {
+  content: '10';
 }
 
 .cart__icon::after {
