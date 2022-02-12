@@ -1,6 +1,12 @@
+.products__lists {
+  width: 100vw;
+  max-width: 100rem;
+}
+
 .product__box {
   height: 20rem;
   max-width: 30rem;
+  min-width: 25rem;
 }
 
 .product__tag {
@@ -19,6 +25,7 @@
   max-width: 100rem;
 
   background-image: url('https://picsum.photos/800/900?q=cloths&sharp=10');
+  /* background-image: url('https://source.unsplash.com/random'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,6 +39,7 @@
 
 .new__arrivals__wrapper {
   max-width: 100rem;
+  width: 100vw;
   margin: auto !important;
 }
 
@@ -41,6 +49,7 @@
 
 .new__arrival {
   max-width: 60rem;
+  min-width: 40rem;
   max-height: 30rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -57,4 +66,29 @@
 
 .new__arrival__image {
   grid-area: image;
+}
+
+@media (max-width: 900px) {
+  .new__arrivals__wrapper {
+    flex-direction: column !important;
+  }
+
+  .new__arrivals__wrapper:not(:last-child()) {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .new__arrival {
+    max-width: 30rem;
+    width: 80%;
+    min-width: 20rem;
+    max-height: max-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 20rem auto;
+    grid-template-areas: 'title' 'image' 'info';
+    border-radius: 1rem;
+    gap: 2rem;
+    padding: 2rem;
+  }
 }

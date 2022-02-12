@@ -6,6 +6,19 @@
   margin-bottom: 1rem !important;
 }
 
+.nav [data-navChild='logo'] {
+  min-width: 8rem;
+  max-width: 15rem;
+}
+.nav [data-navChild='search'] {
+  min-width: 15rem;
+  max-width: 30rem;
+}
+.nav [data-navChild='icons'] {
+  min-width: 20rem;
+  max-width: 25rem;
+}
+
 .nav__search {
   background: rgba(var(--color-rgb-grey), 0.4);
   width: 60%;
