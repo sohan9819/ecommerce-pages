@@ -1,0 +1,50 @@
+.nav {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  height: max-content;
+  margin-bottom: 1rem !important;
+}
+
+.nav [data-navChild='logo'] {
+  min-width: 8rem;
+  max-width: 15rem;
+}
+.nav [data-navChild='search'] {
+  min-width: 15rem;
+  max-width: 30rem;
+}
+.nav [data-navChild='icons'] {
+  min-width: 20rem;
+  max-width: 25rem;
+}
+
+.nav__search {
+  background: rgba(var(--color-rgb-grey), 0.4);
+  width: 60%;
+  max-width: 40rem;
+}
+
+.nav__search-box {
+  outline: none;
+  border: none;
+  position: relative;
+  background: transparent;
+  display: inline;
+  width: 80%;
+}
+
+.heart__icon::after {
+  content: '12';
+}
+.cart__icon::after {
+  content: '10';
+}
+
+.cart__icon::after {
+  background-color: var(--color-red);
+}
+
+.cart__icon__text {
+  display: inline;
+}
