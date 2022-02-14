@@ -1,0 +1,4 @@
+.my__cart {
+  grid-template-columns: auto auto;
+  grid-area: 'product_list bill';
+}

@@ -73,3 +73,7 @@ input[type='range']::-moz-range-progress {
   border-bottom-left-radius: 10px;
   height: 1rem;
 }
+
+input[type='checkbox']:checked {
+  filter: invert(89.4%) hue-rotate(560deg) brightness(107.8%);
+}

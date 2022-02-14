@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pages/my_cart.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container pb-2 flex content-start grid">
+      <nav class="nav row flex items-start max-w-screen flex-wrap">
+        <h4
+          class="col-1-0f-4 p-1 text-center rounded-s nav__logo h4 color-grey"
+          data-navChild="logo"
+        >
+          MyWebsite
+        </h4>
+        <i
+          class="fas fa-search bg-grey w-full col-2-0f-4 m-auto mt-1 mb-1 text-center rounded-s nav__search color-grey"
+          data-navChild="search"
+        >
+          <input
+            type="text"
+            name="search box"
+            id="search__box"
+            placeholder="Search"
+            class="ml-1 py-1 rounded-s nav__search-box color-black"
+          />
+        </i>
+
+        <div
+          class="col-1-0f-4 p-1 text-center rounded-s h4 flex justify-evenly items-center gap-2"
+          data-navChild="icons"
+        >
+          <a
+            href="#"
+            class="uppercase h5 btn--small rounded-s bg-alpha btn__alpha-contained color-white"
+            >Login</a
+          >
+          <a href="./wish_list.html">
+            <i
+              class="heart__icon fas fa-heart color-grey badge__basic-content-s"
+            ></i>
+          </a>
+          <a href="./my_cart.html" class="cart__icon__wrapper"
+            ><i
+              class="cart__icon fas fa-shopping-cart color-grey badge__basic-content-s"
+            ></i>
+            <h4 class="cart__icon__text h5 pl-1 color-grey">&nbsp;Cart</h4></a
+          >
+        </div>
+      </nav>
+
+      <h2 class="h2 w-full text-center my-1 capitalize">My Cart (2)</h2>
+
+      <main class="my__cart grid"></main>
+    </div>
+    <!-- #### FONT AWESOME #### -->
+    <script
+      src="https://kit.fontawesome.com/d6628b0a71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

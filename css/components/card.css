@@ -10,6 +10,7 @@
 }
 
 .like__btn {
+  cursor: pointer;
   width: 3rem;
   height: 3rem;
   right: 1rem;
