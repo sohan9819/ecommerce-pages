@@ -1,0 +1,27 @@
+/* ##### PRODUCT CARD #### */
+
+.product__card {
+  width: 20rem;
+
+  grid-template-columns: auto;
+  grid-template-rows: 25rem auto auto;
+  grid-template-areas: 'product__image' 'product__info' 'order__button';
+}
+
+/* .original__cost {
+  text-decoration: line-through;
+  position: relative;
+}
+
+.original__cost::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-grey);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* ##### PRODUCT CARD LANDSCAPE #### */
