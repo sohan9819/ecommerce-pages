@@ -6,6 +6,14 @@
   grid-template-columns: auto;
   grid-template-rows: 25rem auto auto;
   grid-template-areas: 'product__image' 'product__info' 'order__button';
+  position: relative;
+}
+
+.like__btn {
+  width: 3rem;
+  height: 3rem;
+  right: 1rem;
+  top: 1rem;
 }
 
 /* .original__cost {
