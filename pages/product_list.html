@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pages/listing.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container pb-2 flex content-start grid">
+      <nav class="nav row flex items-start max-w-screen flex-wrap">
+        <h4
+          class="col-1-0f-4 p-1 text-center rounded-s nav__logo h4 color-grey"
+          data-navChild="logo"
+        >
+          MyWebsite
+        </h4>
+        <i
+          class="fas fa-search bg-grey w-full col-2-0f-4 m-auto mt-1 mb-1 text-center rounded-s nav__search color-grey"
+          data-navChild="search"
+        >
+          <input
+            type="text"
+            name="search box"
+            id="search__box"
+            placeholder="Search"
+            class="ml-1 py-1 rounded-s nav__search-box color-black"
+          />
+        </i>
+
+        <div
+          class="col-1-0f-4 p-1 text-center rounded-s h4 flex justify-evenly items-center gap-2"
+          data-navChild="icons"
+        >
+          <a
+            href="#"
+            class="uppercase h5 btn--small rounded-s bg-alpha btn__alpha-contained color-white"
+            >Login</a
+          >
+          <i
+            class="heart__icon fas fa-heart color-grey badge__basic-content-s"
+          ></i>
+          <span class="cart__icon__wrapper"
+            ><i
+              class="cart__icon fas fa-shopping-cart color-grey badge__basic-content-s"
+            ></i>
+            <h4 class="cart__icon__text h5 pl-1 color-grey">
+              &nbsp;Cart
+            </h4></span
+          >
+        </div>
+      </nav>
+
+      <main class="product__listing__wrapper grid">
+        <div class="filters__wrapper filters grid p-1">
+          <h2 class="h3 filter__title w-full">Filters</h2>
+          <h4 class="h4 filter__clear text-right w-full">Clear</h4>
+          <div class="filter__input__range">
+            <label for="priceRange" class="h3 mb-2">Price</label>
+            <input
+              type="range"
+              min="0"
+              max="1000"
+              value="50"
+              step="250"
+              list="tickmarks"
+              id="priceRange"
+              class="mt-1 mb-1"
+            />
+            <datalist id="tickmarks" class="h5 color-grey flex justify-between">
+              <option>0</option>
+              <option>250</option>
+              <option>500</option>
+              <option>750</option>
+              <option>1000</option>
+            </datalist>
+          </div>
+          <div
+            class="filter__category flex items-start justify-start gap-1 flex-col"
+          >
+            <h3 class="h3 mb-1">Category</h3>
+            <div class="category__checkbox">
+              <input type="checkbox" name="category" id="category_1" />
+              <label for="category_1" class="h4 ml-1">Mens Clothing</label>
+            </div>
+            <div class="category__checkbox">
+              <input
+                type="checkbox"
+                name="category"
+                id="category_2"
+                class="bg-alpha"
+              />
+              <label for="category_2" class="h4 ml-1">Mens Clothing</label>
+            </div>
+          </div>
+
+          <div class="filter__rating">
+            <h3 class="h3">Rating</h3>
+
+            <div class="rating__radio__input mt-1">
+              <input type="radio" name="rating" id="rating1" />
+              <label for="rating1" class="ml-1 h4">4 Stars & above</label>
+            </div>
+            <div class="rating__radio__input mt-1">
+              <input type="radio" name="rating" id="rating2" />
+              <label for="rating2" class="ml-1 h4">3 Stars & above</label>
+            </div>
+            <div class="rating__radio__input mt-1">
+              <input type="radio" name="rating" id="rating3" />
+              <label for="rating3" class="ml-1 h4">2 Stars & above</label>
+            </div>
+            <div class="rating__radio__input mt-1">
+              <input type="radio" name="rating" id="rating4" />
+              <label for="rating4" class="ml-1 h4">1 Stars & above</label>
+            </div>
+          </div>
+
+          <div class="filter__sort__by">
+            <h3 class="h3">Sort by</h3>
+
+            <div class="sort__radio__input mt-1">
+              <input type="radio" name="sorting" id="sorting1" />
+              <label for="sorting1" class="ml-1 h4">Price - Low to High </label>
+            </div>
+            <div class="sorting__radio__input mt-1">
+              <input type="radio" name="sorting" id="sorting2" />
+              <label for="sorting2" class="ml-1 h4">Price - High to Low </label>
+            </div>
+          </div>
+        </div>
+        <div class="products__list p-1 gap-2 items-center justify-center">
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-light color-white text-center"
+            >
+              Go to
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-primary color-white text-center"
+            >
+              Add to
+              <i class="fas fa-shopping-cart color-white"></i>
+            </a>
+          </div>
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-primary color-white text-center"
+            >
+              Add to
+              <i class="fas fa-shopping-cart color-white"></i>
+            </a>
+          </div>
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-primary color-white text-center"
+            >
+              Add to
+              <i class="fas fa-shopping-cart color-white"></i>
+            </a>
+          </div>
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-primary color-white text-center"
+            >
+              Add to
+              <i class="fas fa-shopping-cart color-white"></i>
+            </a>
+          </div>
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-primary color-white text-center"
+            >
+              Add to
+              <i class="fas fa-shopping-cart color-white"></i>
+            </a>
+          </div>
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-primary color-white text-center"
+            >
+              Add to
+              <i class="fas fa-shopping-cart color-white"></i>
+            </a>
+          </div>
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-primary color-white text-center"
+            >
+              Add to
+              <i class="fas fa-shopping-cart color-white"></i>
+            </a>
+          </div>
+          <div
+            class="product__card grid bg-white box-shadow rounded-s overflow-hide"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              srcset=""
+              class="w-full h-full"
+            />
+            <div class="product__info text-center p-1">
+              <h4 class="product__name h4">Mens Premium Jacket</h4>
+              <h3 class="product__cost h3">₹2000</h3>
+            </div>
+            <a
+              href="#"
+              class="uppercase h4 btn--medium btn__basic-primary color-white text-center"
+            >
+              Add to
+              <i class="fas fa-shopping-cart color-white"></i>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- #### FONT AWESOME #### -->
+    <script
+      src="https://kit.fontawesome.com/d6628b0a71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

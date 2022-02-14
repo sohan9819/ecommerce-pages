@@ -5,14 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pages/landing.css" />
 
     <title>Document</title>
   </head>
   <body>
-    <div class="container pb-2">
+    <div class="container pb-2 flex flex-col content-start">
       <nav class="nav row flex items-center max-w-screen flex-wrap">
-        <h4 class="col-1-0f-4 p-1 text-center rounded-s nav__logo h4 color-grey" data-navChild="logo">MyWebsite</h4>
-        <i class="fas fa-search bg-grey w-full col-2-0f-4 m-auto mt-1 mb-1 text-center rounded-s nav__search color-grey" data-navChild="search">
+        <h4
+          class="col-1-0f-4 p-1 text-center rounded-s nav__logo h4 color-grey"
+          data-navChild="logo"
+        >
+          MyWebsite
+        </h4>
+        <i
+          class="fas fa-search bg-grey w-full col-2-0f-4 m-auto mt-1 mb-1 text-center rounded-s nav__search color-grey"
+          data-navChild="search"
+        >
           <input
             type="text"
             name="search box"
@@ -20,67 +29,177 @@
             placeholder="Search"
             class="ml-1 py-1 rounded-s nav__search-box color-black"
           />
-        </i>        
-            
-        <div class="col-1-0f-4 p-1 text-center rounded-s h4 flex justify-evenly items-center gap-2" data-navChild="icons">
-          <a href="#" class="uppercase h5 btn--small rounded-s bg-alpha btn__alpha-contained color-white">Login</a>
-          <i class="heart__icon fas fa-heart color-grey badge__basic-content-s"></i>
-          <span class="cart__icon__wrapper"><i class="cart__icon fas fa-shopping-cart color-grey badge__basic-content-s"></i><h4 class="cart__icon__text h5 pl-1 color-grey">&nbsp;Cart</h4></span>
+        </i>
+
+        <div
+          class="col-1-0f-4 p-1 text-center rounded-s h4 flex justify-evenly items-center gap-2"
+          data-navChild="icons"
+        >
+          <a
+            href="#"
+            class="uppercase h5 btn--small rounded-s bg-alpha btn__alpha-contained color-white"
+            >Login</a
+          >
+          <i
+            class="heart__icon fas fa-heart color-grey badge__basic-content-s"
+          ></i>
+          <span class="cart__icon__wrapper"
+            ><i
+              class="cart__icon fas fa-shopping-cart color-grey badge__basic-content-s"
+            ></i>
+            <h4 class="cart__icon__text h5 pl-1 color-grey">
+              &nbsp;Cart
+            </h4></span
+          >
         </div>
       </nav>
       <main>
-        <div class="products__lists flex items-center flex-row flex-nowrap mx-auto  my-2 overflow-x-auto scroll-hide">
-          <div class="product__box col-1-0f-4 p-1 relative" >
-            <img src="https://picsum.photos/300/200" alt="product images" class="w-full rounded-s h-full object-cover">
-            <h4 class="product__tag absolute  h4 w-full text-center bg-white color-grey">MEN</h4>
+        <div
+          class="products__lists flex items-center flex-row flex-nowrap mx-auto my-2 overflow-x-auto scroll-hide"
+        >
+          <div class="product__box col-1-0f-4 p-1 relative">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="product images"
+              class="w-full rounded-s h-full object-cover"
+            />
+            <h4
+              class="product__tag absolute h4 w-full text-center bg-white color-grey"
+            >
+              MEN
+            </h4>
           </div>
-          <div class="product__box col-1-0f-4 p-1 relative" >
-            <img src="https://picsum.photos/300/200" alt="product images" class="w-full rounded-s h-full object-cover">
-            <h4 class="product__tag absolute  h4 w-full text-center bg-white color-grey">MEN</h4>
+          <div class="product__box col-1-0f-4 p-1 relative">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="product images"
+              class="w-full rounded-s h-full object-cover"
+            />
+            <h4
+              class="product__tag absolute h4 w-full text-center bg-white color-grey"
+            >
+              MEN
+            </h4>
           </div>
-          <div class="product__box col-1-0f-4 p-1 relative" >
-            <img src="https://picsum.photos/300/200" alt="product images" class="w-full rounded-s h-full object-cover">
-            <h4 class="product__tag absolute  h4 w-full text-center bg-white color-grey">MEN</h4>
+          <div class="product__box col-1-0f-4 p-1 relative">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="product images"
+              class="w-full rounded-s h-full object-cover"
+            />
+            <h4
+              class="product__tag absolute h4 w-full text-center bg-white color-grey"
+            >
+              MEN
+            </h4>
           </div>
-          <div class="product__box col-1-0f-4 p-1 relative" >
-            <img src="https://picsum.photos/300/200" alt="product images" class="w-full rounded-s h-full object-cover">
-            <h4 class="product__tag absolute  h4 w-full text-center bg-white color-grey">MEN</h4>
+          <div class="product__box col-1-0f-4 p-1 relative">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="product images"
+              class="w-full rounded-s h-full object-cover"
+            />
+            <h4
+              class="product__tag absolute h4 w-full text-center bg-white color-grey"
+            >
+              MEN
+            </h4>
           </div>
-          <div class="product__box col-1-0f-4 p-1 relative" >
-            <img src="https://picsum.photos/300/200" alt="product images" class="w-full rounded-s h-full object-cover">
-            <h4 class="product__tag absolute  h4 w-full text-center bg-white color-grey">MEN</h4>
+          <div class="product__box col-1-0f-4 p-1 relative">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="product images"
+              class="w-full rounded-s h-full object-cover"
+            />
+            <h4
+              class="product__tag absolute h4 w-full text-center bg-white color-grey"
+            >
+              MEN
+            </h4>
           </div>
-          <div class="product__box col-1-0f-4 p-1 relative" >
-            <img src="https://picsum.photos/300/200" alt="product images" class="w-full rounded-s h-full object-cover">
-            <h4 class="product__tag absolute  h4 w-full text-center bg-white color-grey">MEN</h4>
+          <div class="product__box col-1-0f-4 p-1 relative">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="product images"
+              class="w-full rounded-s h-full object-cover"
+            />
+            <h4
+              class="product__tag absolute h4 w-full text-center bg-white color-grey"
+            >
+              MEN
+            </h4>
           </div>
         </div>
 
         <div class="product__display__screen grid mx-auto object-cover my-2">
-          <h4 class="product__trend__tag color-red h4 p-1 pr-2 text-center bg-white ">Trending</h4>
+          <h4
+            class="product__trend__tag color-red h4 p-1 pr-2 text-center bg-white"
+          >
+            Trending
+          </h4>
         </div>
 
-        <div class=" new__arrivals__wrapper mb-4 flex justify-center items-center flex-row gap-2">
-          <div class="col-1-0f-2 p-4 text-center new__arrival grid gap-4 ">
-            <img src="https://picsum.photos/300/200" alt="new arrivals" srcset="https://picsum.photos/200/300 1x , https://picsum.photos/300/200 2x" class="new__arrival__image rounded-s h-full w-full">
-            <h4 class="new__arrival__title uppercase h4 text-left regular">new arrivals</h4>
+        <div
+          class="new__arrivals__wrapper mb-4 flex justify-center items-center flex-row gap-2"
+        >
+          <div class="col-1-0f-2 p-4 text-center new__arrival grid gap-4">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="new arrivals"
+              srcset="
+                https://picsum.photos/200/300 1x,
+                https://picsum.photos/300/200 2x
+              "
+              class="new__arrival__image rounded-s h-full w-full"
+            />
+            <h4 class="new__arrival__title uppercase h4 text-left regular">
+              new arrivals
+            </h4>
             <div class="new__arrival__info text-left">
-              <h2 class="bold capitalize color-black mb-1">Summer Collection</h2>
-              <p class="text-5">Check out our best winter collection to stay warm in style this season</p>
+              <h2 class="bold capitalize color-black mb-1">
+                Summer Collection
+              </h2>
+              <p class="text-5">
+                Check out our best winter collection to stay warm in style this
+                season
+              </p>
             </div>
           </div>
-          <div class="col-1-0f-2 p-4 text-center new__arrival grid gap-4 ">
-            <img src="https://picsum.photos/300/200" alt="new arrivals" srcset="https://picsum.photos/200/300 1x , https://picsum.photos/300/200 2x" class="new__arrival__image rounded-s h-full w-full">
-            <h4 class="new__arrival__title uppercase h4 text-left regular">new arrivals</h4>
+          <div class="col-1-0f-2 p-4 text-center new__arrival grid gap-4">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="new arrivals"
+              srcset="
+                https://picsum.photos/200/300 1x,
+                https://picsum.photos/300/200 2x
+              "
+              class="new__arrival__image rounded-s h-full w-full"
+            />
+            <h4 class="new__arrival__title uppercase h4 text-left regular">
+              new arrivals
+            </h4>
             <div class="new__arrival__info text-left">
-              <h2 class="bold capitalize color-black mb-1">Summer Collection</h2>
-              <p class="text-5">Check out our best winter collection to stay warm in style this season</p>
+              <h2 class="bold capitalize color-black mb-1">
+                Summer Collection
+              </h2>
+              <p class="text-5">
+                Check out our best winter collection to stay warm in style this
+                season
+              </p>
             </div>
           </div>
         </div>
-
       </main>
 
+      <div class="w-full text-center mt-2">
+        <a
+          href="./pages/product_list.html"
+          class="captilize h3 btn--medium btn__alpha-link"
+        >
+          Explore Now
+        </a>
+      </div>
+    </div>
     <!-- #### FONT AWESOME #### -->
     <script
       src="https://kit.fontawesome.com/d6628b0a71.js"
