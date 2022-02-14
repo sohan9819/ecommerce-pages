@@ -5,3 +5,8 @@
 html {
   font-family: var(--font-primary);
 }
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+}
