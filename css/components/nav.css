@@ -41,10 +41,6 @@
   content: '10';
 }
 
-.cart__icon::after {
-  background-color: var(--color-red);
-}
-
 .cart__icon__text {
   display: inline;
 }
