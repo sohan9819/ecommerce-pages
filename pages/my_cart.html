@@ -10,7 +10,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container pb-2 flex content-start grid">
+    <div class="container pb-2 flex content-start grid max-w-screen">
       <nav class="nav row flex items-start max-w-screen flex-wrap">
         <h4
           class="col-1-0f-4 p-1 text-center rounded-s nav__logo h4 color-grey"
@@ -56,7 +56,187 @@
 
       <h2 class="h2 w-full text-center my-1 capitalize">My Cart (2)</h2>
 
-      <main class="my__cart grid"></main>
+      <main class="my__cart grid justify-items-center p-1 gap-1">
+        <div class="cart__products">
+          <div class="product__detail__card mt-2 grid p-1 box-shadow">
+            <div class="detail__card__image p-4">
+              <img
+                src="../assets/images/product_image-1.png"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="detail__card__info pl-2">
+              <h4 class="h4 semibold mt-2">Mens Premium Jacket</h4>
+              <h3 class="h3 mt-1">
+                ₹2000 <span class="original__cost h4 color-grey">₹3000</span>
+              </h3>
+              <h4 class="h4 color-grey bold">50% off</h4>
+
+              <div class="quantity-input mt-2">
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  class="minus items-center justify-center relative"
+                ></button>
+                <input
+                  class="quantity h4 bold text-center font-primary"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus"
+                ></button>
+              </div>
+            </div>
+            <div
+              class="detail__card__btns flex justify-center items-center flex-col gap-1 p-1"
+            >
+              <a
+                href="#"
+                class="capitalize h4 btn--medium bg-grey btn__basic-danger color-white text-center w-full"
+              >
+                Remove from
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+              <a
+                href="#"
+                class="captilize h4 btn--medium btn__basic-primary color-white text-center w-full"
+              >
+                Move to
+                <i class="fas fa-heart color-white"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__detail__card mt-2 grid p-1 box-shadow">
+            <div class="detail__card__image p-4">
+              <img
+                src="../assets/images/product_image-1.png"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="detail__card__info pl-2">
+              <h4 class="h4 semibold mt-2">Mens Premium Jacket</h4>
+              <h3 class="h3 mt-1">
+                ₹2000 <span class="original__cost h4 color-grey">₹3000</span>
+              </h3>
+              <h4 class="h4 color-grey bold">50% off</h4>
+
+              <div class="quantity-input mt-2">
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  class="minus items-center justify-center relative"
+                ></button>
+                <input
+                  class="quantity h4 bold text-center font-primary"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus"
+                ></button>
+              </div>
+            </div>
+            <div
+              class="detail__card__btns flex justify-center items-center flex-col gap-1 p-1"
+            >
+              <a
+                href="#"
+                class="capitalize h4 btn--medium bg-grey btn__basic-danger color-white text-center w-full"
+              >
+                Remove from
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+              <a
+                href="#"
+                class="captilize h4 btn--medium btn__basic-primary color-white text-center w-full"
+              >
+                Move to
+                <i class="fas fa-heart color-white"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__detail__card mt-2 grid p-1 box-shadow">
+            <div class="detail__card__image p-4">
+              <img
+                src="../assets/images/product_image-1.png"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="detail__card__info pl-2">
+              <h4 class="h4 semibold mt-2">Mens Premium Jacket</h4>
+              <h3 class="h3 mt-1">
+                ₹2000 <span class="original__cost h4 color-grey">₹3000</span>
+              </h3>
+              <h4 class="h4 color-grey bold">50% off</h4>
+
+              <div class="quantity-input mt-2">
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  class="minus items-center justify-center relative"
+                ></button>
+                <input
+                  class="quantity h4 bold text-center font-primary"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus"
+                ></button>
+              </div>
+            </div>
+            <div
+              class="detail__card__btns flex justify-center items-center flex-col gap-1 p-1"
+            >
+              <a
+                href="#"
+                class="capitalize h4 btn--medium bg-grey btn__basic-danger color-white text-center w-full"
+              >
+                Remove from
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+              <a
+                href="#"
+                class="captilize h4 btn--medium btn__basic-primary color-white text-center w-full"
+              >
+                Move to
+                <i class="fas fa-heart color-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="cart__bill__card grid gap-1 p-2 box-shadow w-full items-center"
+        >
+          <h3 class="h3 capitalize">Price details</h3>
+          <div class="product__charges h4 w-full grid gap-1 py-1">
+            <h4 class="h4 charge__names semibold">Price (2 items)</h4>
+            <h4 class="h4 charge__price semibold text-right">₹4999</h4>
+            <h4 class="h4 charge__names semibold">Discount</h4>
+            <h4 class="h4 charge__price semibold text-right">-₹1999</h4>
+            <h4 class="h4 charge__names semibold">Delivery Charges</h4>
+            <h4 class="h4 charge__price semibold text-right">₹4999</h4>
+            <span class="total w-full flex justify-between py-1">
+              <h4 class="h4 bold total__name">TOTAL</h4>
+              <h4 class="h4 bold total__price bold">₹3499</h4>
+            </span>
+          </div>
+          <h4 class="h4">You will save ₹1999 on this order</h4>
+          <a
+            href="#"
+            class="captilize h4 btn--medium btn__basic-primary color-white text-center w-full"
+          >
+            Place order
+          </a>
+        </div>
+      </main>
     </div>
     <!-- #### FONT AWESOME #### -->
     <script
