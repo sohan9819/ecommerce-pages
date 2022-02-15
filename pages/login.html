@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pages/login_form.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container pb-2 flex content-start grid">
+      <nav class="nav row flex items-start max-w-screen flex-wrap">
+        <a
+          href="../index.html"
+          class="col-1-0f-4 p-1 text-center rounded-s nav__logo h4 color-grey"
+          data-navChild="logo"
+        >
+          MyWebsite
+        </a>
+        <i
+          class="fas fa-search bg-grey w-full col-2-0f-4 m-auto mt-1 mb-1 text-center rounded-s nav__search color-grey"
+          data-navChild="search"
+        >
+          <input
+            type="text"
+            name="search box"
+            id="search__box"
+            placeholder="Search"
+            class="ml-1 py-1 rounded-s nav__search-box color-black"
+          />
+        </i>
+
+        <div
+          class="col-1-0f-4 p-1 text-center rounded-s h4 flex justify-evenly items-center gap-2"
+          data-navChild="icons"
+        >
+          <a
+            href="#"
+            class="uppercase h5 btn--small rounded-s bg-alpha btn__alpha-contained color-white"
+            >Login</a
+          >
+          <a href="./wish_list.html">
+            <i
+              class="heart__icon fas fa-heart color-grey badge__basic-content-s"
+            ></i>
+          </a>
+          <a href="./my_cart.html" class="cart__icon__wrapper">
+            <i
+              class="cart__icon fas fa-shopping-cart color-grey badge__basic-content-s"
+            >
+            </i>
+            <h4 class="cart__icon__text h5 pl-1 color-grey">&nbsp;Cart</h4>
+          </a>
+        </div>
+      </nav>
+
+      <main
+        class="login__main__wrapper w-full flex justify-center items-center"
+      >
+        <div class="login__form__wrapper grid">
+          <input
+            type="radio"
+            name="login/signup"
+            id="login"
+            class="login__tab__input"
+            checked
+          />
+          <label for="login" class="login__tab h3 text-center"> Login </label>
+
+          <input
+            type="radio"
+            name="login/signup"
+            id="signup"
+            class="signup__tab__input"
+          />
+          <label for="signup" class="signup__tab h3 text-center">
+            SignUp
+          </label>
+
+          <div class="login__form grid">
+            <!-- <h4 class="h4">Login</h4> -->
+            <div class="input__text-group mt-4">
+              <input
+                type="email"
+                class="input__text-input"
+                placeholder="Email address"
+                id="email"
+                required
+              />
+              <label for="email" class="input__text-label color-alpha"
+                >Email</label
+              >
+              <div class="h5 input__error color-red">
+                <i>Must be a valid email address.</i>
+              </div>
+            </div>
+
+            <div class="input__text-group">
+              <input
+                type="password"
+                class="input__text-input"
+                placeholder="Password"
+                id="password"
+                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              />
+              <label for="password" class="input__text-label">Password</label>
+              <div class="h5 input__error color-red">
+                <i
+                  >Your password must be at least 6 characters as well as
+                  contain at least one uppercase, one lowercase, and one
+                  number.</i
+                >
+              </div>
+            </div>
+
+            <div
+              class="login__form__options w-full flex justify-between items-center h4 mb-2"
+            >
+              <label for="remember">
+                <input type="checkbox" name="remember" id="remember" />
+                Remeber me
+              </label>
+
+              <a
+                href="#"
+                class="forgot__link mr-2 h5 color-blue-1 text-underline"
+                >forgot your password?</a
+              >
+            </div>
+
+            <a
+              href="#"
+              class="login__btn capitalize h4 btn--medium rounded-s btn__basic-primary text-center color-white"
+            >
+              Primary
+            </a>
+          </div>
+
+          <div class="signup__form grid">
+            <!-- <h2 class="h2">SignUP</h4> -->
+
+            <div class="input__text-group mt-4">
+              <input
+                type="email"
+                class="input__text-input"
+                placeholder="Email address"
+                id="email"
+                required
+              />
+              <label for="email" class="input__text-label">Email</label>
+              <div class="h5 input__error color-red">
+                <i>Must be a valid email address.</i>
+              </div>
+            </div>
+
+            <div class="input__text-group">
+              <input
+                type="password"
+                class="input__text-input box-shadow"
+                placeholder="Password"
+                id="email"
+                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              />
+              <label for="email" class="input__text-label">Password</label>
+              <div class="h5 input__error color-red">
+                <i
+                  >Your password must be at least 6 characters as well as
+                  contain at least one uppercase, one lowercase, and one
+                  number.</i
+                >
+              </div>
+            </div>
+
+            <div class="signup__form__options h4 mb-2">
+              <label for="remember">
+                <input type="checkbox" name="remember" id="remember" />
+                I accept all tems and conditions
+              </label>
+
+              <a href="#" class="mr-2">forgot your password</a>
+            </div>
+
+            <a
+              href="#"
+              class="signup__btn capitalize h4 btn--medium rounded-s btn__basic-primary text-center color-white"
+            >
+              Create new account
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- #### FONT AWESOME #### -->
+    <script
+      src="https://kit.fontawesome.com/d6628b0a71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
