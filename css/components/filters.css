@@ -74,6 +74,6 @@ input[type='range']::-moz-range-progress {
   height: 1rem;
 }
 
-input[type='checkbox']:checked {
+/* input[type='checkbox']:checked {
   filter: invert(89.4%) hue-rotate(560deg) brightness(107.8%);
-}
+} */
