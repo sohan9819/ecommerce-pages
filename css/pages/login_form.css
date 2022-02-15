@@ -61,3 +61,8 @@
 .forgot__link {
   text-decoration: underline;
 }
+
+.signup__btn,
+.login__btn {
+  border: none;
+}

@@ -67,7 +67,9 @@
             class="login__tab__input"
             checked
           />
-          <label for="login" class="login__tab h3 text-center"> Login </label>
+          <label for="login" class="login__tab h3 text-center pb-1">
+            Login
+          </label>
 
           <input
             type="radio"
@@ -75,12 +77,11 @@
             id="signup"
             class="signup__tab__input"
           />
-          <label for="signup" class="signup__tab h3 text-center">
+          <label for="signup" class="signup__tab h3 text-center pb-1">
             SignUp
           </label>
 
-          <div class="login__form grid">
-            <!-- <h4 class="h4">Login</h4> -->
+          <form action="" class="login__form grid p-1">
             <div class="input__text-group mt-4">
               <input
                 type="email"
@@ -120,7 +121,7 @@
               class="login__form__options w-full flex justify-between items-center h4 mb-2"
             >
               <label for="remember">
-                <input type="checkbox" name="remember" id="remember" />
+                <input type="checkbox" name="remember" id="remember" required />
                 Remeber me
               </label>
 
@@ -131,17 +132,16 @@
               >
             </div>
 
-            <a
+            <button
+              type="submit"
               href="#"
               class="login__btn capitalize h4 btn--medium rounded-s btn__basic-primary text-center color-white"
             >
-              Primary
-            </a>
-          </div>
+              Login
+            </button>
+          </form>
 
-          <div class="signup__form grid">
-            <!-- <h2 class="h2">SignUP</h4> -->
-
+          <form action="" class="signup__form grid p-1">
             <div class="input__text-group mt-4">
               <input
                 type="email"
@@ -177,20 +177,21 @@
 
             <div class="signup__form__options h4 mb-2">
               <label for="remember">
-                <input type="checkbox" name="remember" id="remember" />
+                <input type="checkbox" name="remember" id="remember" required />
                 I accept all tems and conditions
               </label>
 
               <a href="#" class="mr-2">forgot your password</a>
             </div>
 
-            <a
+            <button
+              type="submit"
               href="#"
               class="signup__btn capitalize h4 btn--medium rounded-s btn__basic-primary text-center color-white"
             >
               Create new account
-            </a>
-          </div>
+            </button>
+          </form>
         </div>
       </main>
     </div>
