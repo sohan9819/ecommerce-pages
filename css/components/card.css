@@ -16,21 +16,3 @@
   right: 1rem;
   top: 1rem;
 }
-
-/* .original__cost {
-  text-decoration: line-through;
-  position: relative;
-}
-
-.original__cost::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-grey);
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-/* ##### PRODUCT CARD LANDSCAPE #### */
