@@ -1,7 +1,7 @@
 /* ##### PRODUCT CARD #### */
 
 .product__card {
-  width: 20rem;
+  width: 22rem;
 
   grid-template-columns: auto;
   grid-template-rows: 25rem auto auto;
