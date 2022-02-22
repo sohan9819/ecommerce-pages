@@ -13,7 +13,7 @@
   grid-area: product__list;
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
   background-color: rgba(var(--color-rgb-grey), 0.1);
   justify-items: center;
 }
